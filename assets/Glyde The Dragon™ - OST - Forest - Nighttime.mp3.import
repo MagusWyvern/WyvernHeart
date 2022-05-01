@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Glyde The Dragon™ - OST - Forest - Nighttime.mp3-3299eadf7217a7cbd26955a59916e637.mp3str"
+
+[deps]
+
+source_file="res://assets/Glyde The Dragon™ - OST - Forest - Nighttime.mp3"
+dest_files=[ "res://.import/Glyde The Dragon™ - OST - Forest - Nighttime.mp3-3299eadf7217a7cbd26955a59916e637.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
