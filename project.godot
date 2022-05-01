@@ -11,7 +11,7 @@ config_version=4
 [application]
 
 config/name="WyvernHeart"
-run/main_scene="res://World.tscn"
+run/main_scene="res://Menu.tscn"
 boot_splash/image="res://wyvernheart.png"
 config/icon="res://wyvernheart.png"
 
