@@ -12,8 +12,8 @@ config_version=4
 
 config/name="WyvernHeart"
 run/main_scene="res://Menu.tscn"
-boot_splash/image="res://wyvernheart.png"
-config/icon="res://wyvernheart.png"
+boot_splash/image="res://assets/wyvernheart.png"
+config/icon="res://assets/wyvernheart.png"
 
 [autoload]
 

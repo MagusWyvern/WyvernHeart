@@ -1,11 +1,19 @@
 extends KinematicBody2D
 
+signal health_updated(health)
+signal killed()
+
 const UP = Vector2(0, -1)
 const GRAVITY = 20
 const MAXFALLSPEED = 200
 const MAXSPEED = 50
 var JUMPFORCE = 350
 const ACCELERATION = 10
+
+export (float) var max_health = 100
+
+onready var iframes = $Iframes
+onready var health = max_health setget _set_health
 
 var motion = Vector2()
 
@@ -47,5 +55,27 @@ func _physics_process(delta):
 	if is_on_floor():
 		if Input.is_action_pressed("jump"):
 			motion.y = -JUMPFORCE
+#			damage(25)
 	
 	motion = move_and_slide(motion, UP)
+
+func damage(amount):
+	if iframes.is_stopped():
+		iframes.start()
+		_set_health(health - amount)
+
+func kill():
+	pass
+
+func _set_health(value):
+	
+	var prev_health = health
+	health = clamp(value, 0, max_health)
+	
+	if health != prev_health:
+		emit_signal("health_updated", health)
+		if health == 0:
+			kill()
+			emit_signal("killed")
+		
+

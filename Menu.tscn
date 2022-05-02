@@ -2,14 +2,14 @@
 
 [ext_resource path="res://Menu.gd" type="Script" id=1]
 [ext_resource path="res://assets/PixelFantasy_Caves_1.0/background3.png" type="Texture" id=2]
-[ext_resource path="res://mainlev_build.png" type="Texture" id=3]
+[ext_resource path="res://assets/mainlev_build.png" type="Texture" id=3]
 [ext_resource path="res://assets/player/Davion Walking1.png" type="Texture" id=4]
-[ext_resource path="res://wyvernheartname.png" type="Texture" id=5]
+[ext_resource path="res://assets/wyvernheartname.png" type="Texture" id=5]
 [ext_resource path="res://assets/player/Davion Walking2.png" type="Texture" id=6]
 [ext_resource path="res://assets/player/Davion Walking3.png" type="Texture" id=7]
 [ext_resource path="res://assets/player/Frame 2.png" type="Texture" id=8]
 [ext_resource path="res://assets/player/Frame 1.png" type="Texture" id=9]
-[ext_resource path="res://wyvernheart (1).png" type="Texture" id=10]
+[ext_resource path="res://assets/wyvernheart (1).png" type="Texture" id=10]
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -2520,7 +2520,6 @@ position = Vector2( 560, 512 )
 [node name="Sprite" type="AnimatedSprite" parent="Player"]
 frames = SubResource( 51 )
 animation = "walk"
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
