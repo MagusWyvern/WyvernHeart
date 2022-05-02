@@ -60,9 +60,11 @@ func _physics_process(delta):
 	motion = move_and_slide(motion, UP)
 
 func damage(amount):
-	if iframes.is_stopped():
-		iframes.start()
-		_set_health(health - amount)
+#	if iframes.is_stopped():
+#		iframes.start()
+#		_set_health(health - amount)
+	pass
+
 
 func kill():
 	pass
