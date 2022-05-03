@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Comparison2x.png-773aa40d6a0685580d115f2037e33ded.stex"
+path="res://.import/Comparison2x.png-54b0da43489920485a40eb3fdaee7edc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/FreeKnight_v1/Comparison2x.png"
-dest_files=[ "res://.import/Comparison2x.png-773aa40d6a0685580d115f2037e33ded.stex" ]
+source_file="res://Assets/FreeKnight_v1/Comparison2x.png"
+dest_files=[ "res://.import/Comparison2x.png-54b0da43489920485a40eb3fdaee7edc.stex" ]
 
 [params]
 

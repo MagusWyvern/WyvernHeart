@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/_WallClimbNoMovement.png-d1eff8e7c6370c57177076c7b46d43df.stex"
+path="res://.import/_WallClimbNoMovement.png-066a90fa81c5575546b17e4387b0deb0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_WallClimbNoMovement.png"
-dest_files=[ "res://.import/_WallClimbNoMovement.png-d1eff8e7c6370c57177076c7b46d43df.stex" ]
+source_file="res://Assets/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_WallClimbNoMovement.png"
+dest_files=[ "res://.import/_WallClimbNoMovement.png-066a90fa81c5575546b17e4387b0deb0.stex" ]
 
 [params]
 

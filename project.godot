@@ -11,13 +11,13 @@ config_version=4
 [application]
 
 config/name="WyvernHeart"
-run/main_scene="res://Menu.tscn"
-boot_splash/image="res://assets/wyvernheart.png"
-config/icon="res://assets/wyvernheart.png"
+run/main_scene="res://Scenes/Menu.tscn"
+boot_splash/image="res://Assets/wyvernheart.png"
+config/icon="res://Assets/wyvernheart.png"
 
 [autoload]
 
-OST_Nighttime="*res://OST_Nighttime.tscn"
+OST_Nighttime="*res://Scenes/OST_Nighttime.tscn"
 
 [importer_defaults]
 
@@ -61,6 +61,11 @@ jump={
 , Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":32,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
  ]
 }
+attack={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":81,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
 
 [physics]
 
@@ -68,4 +73,4 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
-environment/default_environment="res://default_env.tres"
+environment/default_environment="res://Tile_Resources/default_env.tres"

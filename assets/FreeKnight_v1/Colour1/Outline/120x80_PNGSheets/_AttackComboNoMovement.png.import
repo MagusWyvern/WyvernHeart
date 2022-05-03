@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/_AttackComboNoMovement.png-7726362f79d79055f2622b32011f8cf5.stex"
+path="res://.import/_AttackComboNoMovement.png-3f6bdd6ccedbfb61510ba068e33aee97.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/FreeKnight_v1/Colour1/Outline/120x80_PNGSheets/_AttackComboNoMovement.png"
-dest_files=[ "res://.import/_AttackComboNoMovement.png-7726362f79d79055f2622b32011f8cf5.stex" ]
+source_file="res://Assets/FreeKnight_v1/Colour1/Outline/120x80_PNGSheets/_AttackComboNoMovement.png"
+dest_files=[ "res://.import/_AttackComboNoMovement.png-3f6bdd6ccedbfb61510ba068e33aee97.stex" ]
 
 [params]
 

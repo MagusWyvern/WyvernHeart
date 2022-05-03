@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Davion Walking2.png-7af5c0479da1b62072f9dd43f10ef84d.stex"
+path="res://.import/Davion Walking2.png-dd132676761aeae6310209c5a22f720c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/Davion Walking2.png"
-dest_files=[ "res://.import/Davion Walking2.png-7af5c0479da1b62072f9dd43f10ef84d.stex" ]
+source_file="res://Assets/player/Davion Walking2.png"
+dest_files=[ "res://.import/Davion Walking2.png-dd132676761aeae6310209c5a22f720c.stex" ]
 
 [params]
 
