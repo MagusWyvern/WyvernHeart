@@ -15,10 +15,6 @@ run/main_scene="res://Scenes/Menu.tscn"
 boot_splash/image="res://Assets/wyvernheart.png"
 config/icon="res://Assets/wyvernheart.png"
 
-[autoload]
-
-OST_Nighttime="*res://Scenes/OST_Nighttime.tscn"
-
 [importer_defaults]
 
 texture={

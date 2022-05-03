@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/OST_Daytime.mp3-bf24ec88e401e173699337f88f06ba0d.mp3str"
+
+[deps]
+
+source_file="res://Assets/OST_Daytime.mp3"
+dest_files=[ "res://.import/OST_Daytime.mp3-bf24ec88e401e173699337f88f06ba0d.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
