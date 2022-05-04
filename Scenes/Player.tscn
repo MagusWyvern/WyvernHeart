@@ -13,7 +13,7 @@
 [ext_resource path="res://Assets/Adventurer-1.5/Individual Sprites/adventurer-idle-2-00.png" type="Texture" id=11]
 [ext_resource path="res://Assets/Adventurer-1.5/Individual Sprites/adventurer-run-00.png" type="Texture" id=12]
 [ext_resource path="res://Scenes/EntityBase.tscn" type="PackedScene" id=13]
-[ext_resource path="res://Scenes/HealthMana.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Scenes/Player_HealthBar.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=15]
 [ext_resource path="res://Assets/Adventurer-1.5/Individual Sprites/adventurer-jump-01.png" type="Texture" id=16]
 [ext_resource path="res://Assets/Adventurer-1.5/Individual Sprites/adventurer-run-02.png" type="Texture" id=17]
@@ -53,14 +53,14 @@ animations = [ {
 "name": "fall",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 12 ), ExtResource( 5 ), ExtResource( 17 ), ExtResource( 4 ), ExtResource( 9 ), ExtResource( 6 ) ],
-"loop": true,
-"name": "walk",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 24 ), ExtResource( 23 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ) ],
 "loop": true,
 "name": "attack",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 5 ), ExtResource( 17 ), ExtResource( 4 ), ExtResource( 9 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "walk",
 "speed": 5.0
 } ]
 
@@ -76,7 +76,8 @@ shape = SubResource( 56 )
 
 [node name="AnimatedSprite" parent="." index="2"]
 frames = SubResource( 55 )
-animation = "attack"
+animation = "idle"
+speed_scale = 1.5
 
 [node name="Camera2D" type="Camera2D" parent="." index="3"]
 offset = Vector2( 0, -40 )

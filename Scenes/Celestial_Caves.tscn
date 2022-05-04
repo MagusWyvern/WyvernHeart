@@ -1,7 +1,7 @@
 [gd_scene load_steps=84 format=2]
 
 [ext_resource path="res://Assets/PixelFantasy_Caves_1.0/background3.png" type="Texture" id=1]
-[ext_resource path="res://Scripts/World.gd" type="Script" id=2]
+[ext_resource path="res://Scripts/Celestial_Caves.gd" type="Script" id=2]
 [ext_resource path="res://Assets/PixelFantasy_Caves_1.0/props1.png" type="Texture" id=3]
 [ext_resource path="res://Assets/PixelFantasy_Caves_1.0/props2.png" type="Texture" id=4]
 [ext_resource path="res://Assets/PixelFantasy_Caves_1.0/background4a.png" type="Texture" id=5]
@@ -9,8 +9,8 @@
 [ext_resource path="res://Assets/cavesofgallet/cavesofgallet_tiles.png" type="Texture" id=7]
 [ext_resource path="res://Assets/PixelFantasy_Caves_1.0/background4b.png" type="Texture" id=8]
 [ext_resource path="res://Assets/PixelFantasy_Caves_1.0/mainlev_build.png" type="Texture" id=9]
-[ext_resource path="res://Scenes/Knight_Deprecated.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Scenes/Enemy_Knight.tscn" type="PackedScene" id=12]
 
 [sub_resource type="ConvexPolygonShape2D" id=18]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -4818,8 +4818,14 @@ script = ExtResource( 2 )
 [node name="Player" parent="." instance=ExtResource( 11 )]
 position = Vector2( -34, -3 )
 
-[node name="Knight" parent="." instance=ExtResource( 10 )]
-position = Vector2( 209, 26 )
+[node name="Enemy_Knight3" parent="." instance=ExtResource( 12 )]
+position = Vector2( 1532, 158 )
+
+[node name="Enemy_Knight2" parent="." instance=ExtResource( 12 )]
+position = Vector2( 1240, 93 )
+
+[node name="Enemy_Knight" parent="." instance=ExtResource( 12 )]
+position = Vector2( 757, 50 )
 
 [node name="Dark_Background" type="TileMap" parent="."]
 z_index = -3

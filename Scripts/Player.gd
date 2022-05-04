@@ -3,10 +3,8 @@ extends "res://Scripts/EntityBase.gd"
 signal health_updated(health)
 signal killed()
 
-const UP = Vector2(0, -1)
 const GRAVITY = 20
 const MAXFALLSPEED = 200
-#const MAXSPEED = 50
 var JUMPFORCE = 380
 const ACCELERATION = 20
 var should_change_animation = true
@@ -29,7 +27,7 @@ func _ready():
 #func _process(delta):
 #	pass
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	velocity.x = clamp(velocity.x, -SPEED, SPEED)
 	
 	velocity.y += GRAVITY
@@ -38,16 +36,12 @@ func _physics_process(delta):
 		
 	if Input.is_action_pressed("right"):
 		velocity.x += ACCELERATION
-#		$AnimatedSprite.animation = "walk"
 		$AnimatedSprite.flip_v = false
 		$AnimatedSprite.flip_h = velocity.x < 0
-
 	elif Input.is_action_pressed("left"):
 		velocity.x -= ACCELERATION
-#		$AnimatedSprite.animation = "walk"
 		$AnimatedSprite.flip_v = false
 		$AnimatedSprite.flip_h = velocity.x < 0
-
 	elif Input.is_action_pressed("attack"):
 		if $AttackCooldown.is_stopped():
 			print("Attacking!")
@@ -59,7 +53,6 @@ func _physics_process(delta):
 		
 	if velocity.y > 20:
 		$AnimatedSprite.play("fall")
-#		should_change_animation = false
 	elif velocity.y < 0:
 		$AnimatedSprite.play("jump")
 		should_change_animation = false
@@ -77,11 +70,8 @@ func _physics_process(delta):
 	if is_on_floor():
 		if Input.is_action_pressed("jump"):
 			velocity.y = -JUMPFORCE
-		
-#			damage(25)
 	
-	print(velocity.y)
-#	velocity = move_and_slide(velocity)
+#	print("Current velocity: ", str(velocity.y))
 
 func damage(amount):
 #	if iframes.is_stopped():
