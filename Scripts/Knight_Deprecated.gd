@@ -15,7 +15,7 @@ var motion = Vector2()
 
 onready var attackcd = $AttackCooldown
 
-#onready var player = get_node("../Player")
+# onready var _player = get_node("../Player")
 
 
 # Called when the node enters the scene tree for the first time.
