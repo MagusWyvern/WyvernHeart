@@ -7,8 +7,8 @@ const UP = Vector2(0, -1)
 const GRAVITY = 20
 const MAXFALLSPEED = 200
 #const MAXSPEED = 50
-var JUMPFORCE = 350
-const ACCELERATION = 10
+var JUMPFORCE = 380
+const ACCELERATION = 20
 var should_change_animation = true
 var is_attacking = false
 
@@ -41,13 +41,13 @@ func _physics_process(delta):
 #		$AnimatedSprite.animation = "walk"
 		$AnimatedSprite.flip_v = false
 		$AnimatedSprite.flip_h = velocity.x < 0
-		$AnimatedSprite.play()
+
 	elif Input.is_action_pressed("left"):
 		velocity.x -= ACCELERATION
 #		$AnimatedSprite.animation = "walk"
 		$AnimatedSprite.flip_v = false
 		$AnimatedSprite.flip_h = velocity.x < 0
-		$AnimatedSprite.play()
+
 	elif Input.is_action_pressed("attack"):
 		if $AttackCooldown.is_stopped():
 			print("Attacking!")
@@ -107,3 +107,4 @@ func _set_health(value):
 
 func _on_AnimatedSprite_animation_finished():
 	is_attacking = false # Replace with function body.
+	should_change_animation = true

@@ -18,7 +18,7 @@ func _ready():
 
 
 func _on_StartButton_pressed():
-	get_tree().change_scene("res://Scenes/World.tscn")
+	get_tree().change_scene("res://Scenes/Celestial_Caves.tscn")
 
 
 func _on_OptionsButton_pressed():
