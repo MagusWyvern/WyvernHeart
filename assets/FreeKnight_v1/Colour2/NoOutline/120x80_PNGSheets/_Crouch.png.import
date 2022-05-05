@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/_Crouch.png-75de8faa745467dd29340e8eafb1a390.stex"
+path="res://.import/_Crouch.png-82ecee819aa0794657925bbeb1d77806.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Crouch.png"
-dest_files=[ "res://.import/_Crouch.png-75de8faa745467dd29340e8eafb1a390.stex" ]
+source_file="res://assets/FreeKnight_v1/Colour2/NoOutline/120x80_PNGSheets/_Crouch.png"
+dest_files=[ "res://.import/_Crouch.png-82ecee819aa0794657925bbeb1d77806.stex" ]
 
 [params]
 

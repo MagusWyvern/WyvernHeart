@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/lereon knight.png-10b22dd2bcab5e8daf86fdf23e44300a.stex"
+path="res://.import/lereon knight.png-d3ac4fdb1047edd30730233ddd071f3f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/all sprite sample/all sprite sample/lereon knight.png"
-dest_files=[ "res://.import/lereon knight.png-10b22dd2bcab5e8daf86fdf23e44300a.stex" ]
+source_file="res://assets/all sprite sample/all sprite sample/lereon knight.png"
+dest_files=[ "res://.import/lereon knight.png-d3ac4fdb1047edd30730233ddd071f3f.stex" ]
 
 [params]
 

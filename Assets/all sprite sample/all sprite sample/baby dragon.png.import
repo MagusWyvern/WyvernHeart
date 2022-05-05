@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/baby dragon.png-f7b05321d828af3acd91fdae365bfa36.stex"
+path="res://.import/baby dragon.png-2b651bd16459c4f29f6593e32f806cc1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/all sprite sample/all sprite sample/baby dragon.png"
-dest_files=[ "res://.import/baby dragon.png-f7b05321d828af3acd91fdae365bfa36.stex" ]
+source_file="res://assets/all sprite sample/all sprite sample/baby dragon.png"
+dest_files=[ "res://.import/baby dragon.png-2b651bd16459c4f29f6593e32f806cc1.stex" ]
 
 [params]
 

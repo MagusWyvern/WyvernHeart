@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/wolf.png-b699a85e9e3c3b1e796f1da48012f06c.stex"
+path="res://.import/wolf.png-af9910ddfc5ff58f168c572af2bb039f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/all sprite sample/all sprite sample/wolf.png"
-dest_files=[ "res://.import/wolf.png-b699a85e9e3c3b1e796f1da48012f06c.stex" ]
+source_file="res://assets/all sprite sample/all sprite sample/wolf.png"
+dest_files=[ "res://.import/wolf.png-af9910ddfc5ff58f168c572af2bb039f.stex" ]
 
 [params]
 

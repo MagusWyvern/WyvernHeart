@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/_JumpFallInbetween.png-0cd5a5de2b02f51550cab182f507ad2f.stex"
+path="res://.import/_JumpFallInbetween.png-55c69d2c1d775256ed42a93f5771c298.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/FreeKnight_v1/Colour1/Outline/120x80_PNGSheets/_JumpFallInbetween.png"
-dest_files=[ "res://.import/_JumpFallInbetween.png-0cd5a5de2b02f51550cab182f507ad2f.stex" ]
+source_file="res://assets/FreeKnight_v1/Colour1/Outline/120x80_PNGSheets/_JumpFallInbetween.png"
+dest_files=[ "res://.import/_JumpFallInbetween.png-55c69d2c1d775256ed42a93f5771c298.stex" ]
 
 [params]
 

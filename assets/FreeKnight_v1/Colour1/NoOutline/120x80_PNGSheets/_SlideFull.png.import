@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/_SlideFull.png-99d0bafb93dd36d9be6b6244d963ef8b.stex"
+path="res://.import/_SlideFull.png-00824a9109100bd3b4f2b63e2c4a70b4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_SlideFull.png"
-dest_files=[ "res://.import/_SlideFull.png-99d0bafb93dd36d9be6b6244d963ef8b.stex" ]
+source_file="res://assets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_SlideFull.png"
+dest_files=[ "res://.import/_SlideFull.png-00824a9109100bd3b4f2b63e2c4a70b4.stex" ]
 
 [params]
 

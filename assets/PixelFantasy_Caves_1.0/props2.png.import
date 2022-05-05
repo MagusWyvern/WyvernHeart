@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/props2.png-ea94e6b30f538ba61b707c16b88f1cf8.stex"
+path="res://.import/props2.png-12e75cca008e7f97878ab1384d609d13.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/PixelFantasy_Caves_1.0/props2.png"
-dest_files=[ "res://.import/props2.png-ea94e6b30f538ba61b707c16b88f1cf8.stex" ]
+source_file="res://assets/PixelFantasy_Caves_1.0/props2.png"
+dest_files=[ "res://.import/props2.png-12e75cca008e7f97878ab1384d609d13.stex" ]
 
 [params]
 

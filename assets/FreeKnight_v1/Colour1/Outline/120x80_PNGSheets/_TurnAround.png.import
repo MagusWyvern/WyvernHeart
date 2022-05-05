@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/_TurnAround.png-311c0c0fd71b77bb95430816baa88136.stex"
+path="res://.import/_TurnAround.png-5595fd764b71c5c5cba62107174ba047.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/FreeKnight_v1/Colour1/Outline/120x80_PNGSheets/_TurnAround.png"
-dest_files=[ "res://.import/_TurnAround.png-311c0c0fd71b77bb95430816baa88136.stex" ]
+source_file="res://assets/FreeKnight_v1/Colour1/Outline/120x80_PNGSheets/_TurnAround.png"
+dest_files=[ "res://.import/_TurnAround.png-5595fd764b71c5c5cba62107174ba047.stex" ]
 
 [params]
 

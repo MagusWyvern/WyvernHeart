@@ -2,12 +2,12 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/OST_Celestial_Caves.mp3-800fc351255d24bc68e0392af4708403.mp3str"
+path="res://.import/OST_Celestial_Caves.mp3-1cd8ba8a7605abaef86327d1be29c853.mp3str"
 
 [deps]
 
-source_file="res://Assets/OST_Celestial_Caves.mp3"
-dest_files=[ "res://.import/OST_Celestial_Caves.mp3-800fc351255d24bc68e0392af4708403.mp3str" ]
+source_file="res://assets/OST_Celestial_Caves.mp3"
+dest_files=[ "res://.import/OST_Celestial_Caves.mp3-1cd8ba8a7605abaef86327d1be29c853.mp3str" ]
 
 [params]
 

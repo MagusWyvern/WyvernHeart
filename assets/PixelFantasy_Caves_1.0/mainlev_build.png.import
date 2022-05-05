@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mainlev_build.png-0b4b931d10a2c5ced5d9044052848540.stex"
+path="res://.import/mainlev_build.png-20fb2f91e60fb40985f7630589930060.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/PixelFantasy_Caves_1.0/mainlev_build.png"
-dest_files=[ "res://.import/mainlev_build.png-0b4b931d10a2c5ced5d9044052848540.stex" ]
+source_file="res://assets/PixelFantasy_Caves_1.0/mainlev_build.png"
+dest_files=[ "res://.import/mainlev_build.png-20fb2f91e60fb40985f7630589930060.stex" ]
 
 [params]
 

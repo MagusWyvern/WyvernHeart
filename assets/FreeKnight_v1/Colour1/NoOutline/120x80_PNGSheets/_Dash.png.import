@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/_Dash.png-89e0bc29a54f6ee13be9e22f807c840e.stex"
+path="res://.import/_Dash.png-7b818e01999a711bcfc004dd9998a382.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Dash.png"
-dest_files=[ "res://.import/_Dash.png-89e0bc29a54f6ee13be9e22f807c840e.stex" ]
+source_file="res://assets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Dash.png"
+dest_files=[ "res://.import/_Dash.png-7b818e01999a711bcfc004dd9998a382.stex" ]
 
 [params]
 

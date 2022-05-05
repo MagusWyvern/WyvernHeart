@@ -2,12 +2,12 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/OST_Nighttime.mp3-4d3aa53e469e6dc5a8a8f2258f5a7598.mp3str"
+path="res://.import/OST_Nighttime.mp3-908019f0bd8b58729a697a99f32da860.mp3str"
 
 [deps]
 
-source_file="res://Assets/OST_Nighttime.mp3"
-dest_files=[ "res://.import/OST_Nighttime.mp3-4d3aa53e469e6dc5a8a8f2258f5a7598.mp3str" ]
+source_file="res://assets/OST_Nighttime.mp3"
+dest_files=[ "res://.import/OST_Nighttime.mp3-908019f0bd8b58729a697a99f32da860.mp3str" ]
 
 [params]
 

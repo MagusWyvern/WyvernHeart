@@ -2,12 +2,12 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/OST_Daytime.mp3-bf24ec88e401e173699337f88f06ba0d.mp3str"
+path="res://.import/OST_Daytime.mp3-f8cdef9d528bc203b456ad541cd27182.mp3str"
 
 [deps]
 
-source_file="res://Assets/OST_Daytime.mp3"
-dest_files=[ "res://.import/OST_Daytime.mp3-bf24ec88e401e173699337f88f06ba0d.mp3str" ]
+source_file="res://assets/OST_Daytime.mp3"
+dest_files=[ "res://.import/OST_Daytime.mp3-f8cdef9d528bc203b456ad541cd27182.mp3str" ]
 
 [params]
 

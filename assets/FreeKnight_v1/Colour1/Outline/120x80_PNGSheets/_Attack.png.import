@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/_Attack.png-1105ee1c8352a3832569690ac22f7419.stex"
+path="res://.import/_Attack.png-d5af8ffc41058808866afe8b553e4d79.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/FreeKnight_v1/Colour1/Outline/120x80_PNGSheets/_Attack.png"
-dest_files=[ "res://.import/_Attack.png-1105ee1c8352a3832569690ac22f7419.stex" ]
+source_file="res://assets/FreeKnight_v1/Colour1/Outline/120x80_PNGSheets/_Attack.png"
+dest_files=[ "res://.import/_Attack.png-d5af8ffc41058808866afe8b553e4d79.stex" ]
 
 [params]
 

@@ -6,7 +6,7 @@ valid=false
 
 [deps]
 
-source_file="res://Assets/all sprite sample/__MACOSX/all sprite sample/._wolf.png"
+source_file="res://assets/all sprite sample/__MACOSX/all sprite sample/._wolf.png"
 [params]
 
 compress/mode=0

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/adventurer-cast-loop-02.png-ac6af256e1b2743076153d934c4228f2.stex"
+path="res://.import/adventurer-cast-loop-02.png-7cae689307cfa2f2e4387131716eedc9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Adventurer-1.5/Individual Sprites/adventurer-cast-loop-02.png"
-dest_files=[ "res://.import/adventurer-cast-loop-02.png-ac6af256e1b2743076153d934c4228f2.stex" ]
+source_file="res://assets/Adventurer-1.5/Individual Sprites/adventurer-cast-loop-02.png"
+dest_files=[ "res://.import/adventurer-cast-loop-02.png-7cae689307cfa2f2e4387131716eedc9.stex" ]
 
 [params]
 

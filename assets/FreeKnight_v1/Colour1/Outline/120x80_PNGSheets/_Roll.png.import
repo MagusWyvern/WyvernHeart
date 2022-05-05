@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/_Roll.png-2751a987cf61d2fea2a9d037e973cbce.stex"
+path="res://.import/_Roll.png-ed2d5474dced5f66f8084f054ac98488.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/FreeKnight_v1/Colour1/Outline/120x80_PNGSheets/_Roll.png"
-dest_files=[ "res://.import/_Roll.png-2751a987cf61d2fea2a9d037e973cbce.stex" ]
+source_file="res://assets/FreeKnight_v1/Colour1/Outline/120x80_PNGSheets/_Roll.png"
+dest_files=[ "res://.import/_Roll.png-ed2d5474dced5f66f8084f054ac98488.stex" ]
 
 [params]
 

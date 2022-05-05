@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/_Idle.png-0767bd8fb46641b8dff6366ff327ed53.stex"
+path="res://.import/_Idle.png-80d95e58bcdd0de48ac480d1c2547e1a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Idle.png"
-dest_files=[ "res://.import/_Idle.png-0767bd8fb46641b8dff6366ff327ed53.stex" ]
+source_file="res://assets/FreeKnight_v1/Colour1/NoOutline/120x80_PNGSheets/_Idle.png"
+dest_files=[ "res://.import/_Idle.png-80d95e58bcdd0de48ac480d1c2547e1a.stex" ]
 
 [params]
 
