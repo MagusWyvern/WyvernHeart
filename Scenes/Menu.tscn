@@ -2556,15 +2556,15 @@ shape = SubResource( 54 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Player"]
 frames = SubResource( 55 )
 animation = "idle"
-frame = 3
+frame = 1
 playing = true
 
-[node name="Wyvernheart(1)" type="Sprite" parent="."]
+[node name="Wyvernheart-bg" type="Sprite" parent="."]
 position = Vector2( 496, 264 )
 texture = ExtResource( 6 )
 offset = Vector2( 2, 1 )
 
-[node name="Wyvernheartname" type="Sprite" parent="."]
+[node name="Wyvernheart-fg" type="Sprite" parent="."]
 position = Vector2( 496, 264 )
 texture = ExtResource( 20 )
 

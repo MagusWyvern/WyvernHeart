@@ -9,8 +9,8 @@
 [ext_resource path="res://Assets/world/cavesofgallet_tiles.png" type="Texture" id=7]
 [ext_resource path="res://Assets/world/background4b.png" type="Texture" id=8]
 [ext_resource path="res://Assets/world/mainlev_build.png" type="Texture" id=9]
-[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=11]
-[ext_resource path="res://Scenes/Enemy_Knight.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Scenes/Entities/Player.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Scenes/Entities/Enemy_Knight.tscn" type="PackedScene" id=12]
 
 [sub_resource type="ConvexPolygonShape2D" id=18]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )

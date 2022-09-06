@@ -11,8 +11,10 @@ config_version=4
 [application]
 
 config/name="WyvernHeart"
+config/description="A 2D platformer story-rich adventure game where you play as an adventure that made a pact with the Draak-kin!"
 run/main_scene="res://Scenes/Menu.tscn"
 boot_splash/image="res://Assets/wyvernheart.png"
+boot_splash/bg_color=Color( 0.101961, 0.0980392, 0.0980392, 1 )
 config/icon="res://Assets/wyvernheart.png"
 
 [importer_defaults]
@@ -70,3 +72,4 @@ common/enable_pause_aware_picking=true
 [rendering]
 
 environment/default_environment="res://Tile_Resources/default_env.tres"
+cpu_lightmapper/bg_color=Color( 0.14, 0.14, 0.14, 1 )
