@@ -1,7 +1,8 @@
 [gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Scripts/EntityBase.gd" type="Script" id=1]
-[ext_resource path="res://Assets/FreeKnight_v1/Colour2/Outline/120x80_PNGSheets/_Idle.png" type="Texture" id=2]
+[ext_resource path="res://Assets/characters/enemy/Colour2/Outline/120x80_PNGSheets/_Idle.png" type="Texture" id=2]
+
 
 [sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 2 )

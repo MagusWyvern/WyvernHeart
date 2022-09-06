@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/nighttime-glyde-ost.mp3-36219d3b36d2da6a8c33648ae1774860.mp3str"
+
+[deps]
+
+source_file="res://Assets/ost/nighttime-glyde-ost.mp3"
+dest_files=[ "res://.import/nighttime-glyde-ost.mp3-36219d3b36d2da6a8c33648ae1774860.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

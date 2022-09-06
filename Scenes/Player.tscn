@@ -1,30 +1,29 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=28 format=2]
 
-[ext_resource path="res://Assets/Adventurer-1.5/Individual Sprites/adventurer-idle-2-01.png" type="Texture" id=1]
-[ext_resource path="res://Assets/Adventurer-1.5/Individual Sprites/adventurer-jump-00.png" type="Texture" id=2]
-[ext_resource path="res://Assets/Adventurer-1.5/Individual Sprites/adventurer-jump-03.png" type="Texture" id=3]
-[ext_resource path="res://Assets/Adventurer-1.5/Individual Sprites/adventurer-run-03.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Adventurer-1.5/Individual Sprites/adventurer-run-01.png" type="Texture" id=5]
-[ext_resource path="res://Assets/Adventurer-1.5/Individual Sprites/adventurer-run-05.png" type="Texture" id=6]
-[ext_resource path="res://Assets/Adventurer-1.5/Individual Sprites/adventurer-idle-2-02.png" type="Texture" id=7]
-[ext_resource path="res://Assets/Adventurer-1.5/Individual Sprites/adventurer-fall-00.png" type="Texture" id=8]
-[ext_resource path="res://Assets/Adventurer-1.5/Individual Sprites/adventurer-run-04.png" type="Texture" id=9]
-[ext_resource path="res://Assets/Adventurer-1.5/Individual Sprites/adventurer-fall-01.png" type="Texture" id=10]
-[ext_resource path="res://Assets/Adventurer-1.5/Individual Sprites/adventurer-idle-2-00.png" type="Texture" id=11]
-[ext_resource path="res://Assets/Adventurer-1.5/Individual Sprites/adventurer-run-00.png" type="Texture" id=12]
+[ext_resource path="res://Assets/characters/player/adventurer-idle-2-01.png" type="Texture" id=1]
+[ext_resource path="res://Assets/characters/player/adventurer-jump-00.png" type="Texture" id=2]
+[ext_resource path="res://Assets/characters/player/adventurer-jump-03.png" type="Texture" id=3]
+[ext_resource path="res://Assets/characters/player/adventurer-run-03.png" type="Texture" id=4]
+[ext_resource path="res://Assets/characters/player/adventurer-run-01.png" type="Texture" id=5]
+[ext_resource path="res://Assets/characters/player/adventurer-run-05.png" type="Texture" id=6]
+[ext_resource path="res://Assets/characters/player/adventurer-idle-2-02.png" type="Texture" id=7]
+[ext_resource path="res://Assets/characters/player/adventurer-fall-00.png" type="Texture" id=8]
+[ext_resource path="res://Assets/characters/player/adventurer-run-04.png" type="Texture" id=9]
+[ext_resource path="res://Assets/characters/player/adventurer-fall-01.png" type="Texture" id=10]
+[ext_resource path="res://Assets/characters/player/adventurer-idle-2-00.png" type="Texture" id=11]
+[ext_resource path="res://Assets/characters/player/adventurer-run-00.png" type="Texture" id=12]
 [ext_resource path="res://Scenes/EntityBase.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Scenes/Player_HealthBar.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=15]
-[ext_resource path="res://Assets/Adventurer-1.5/Individual Sprites/adventurer-jump-01.png" type="Texture" id=16]
-[ext_resource path="res://Assets/Adventurer-1.5/Individual Sprites/adventurer-run-02.png" type="Texture" id=17]
-[ext_resource path="res://Assets/Adventurer-1.5/Individual Sprites/adventurer-idle-2-03.png" type="Texture" id=18]
-[ext_resource path="res://Assets/Adventurer-1.5/Individual Sprites/adventurer-jump-02.png" type="Texture" id=19]
-[ext_resource path="res://Assets/Adventurer-1.5/Individual Sprites/adventurer-attack1-02.png" type="Texture" id=20]
-[ext_resource path="res://Assets/Adventurer-1.5/Individual Sprites/adventurer-attack1-03.png" type="Texture" id=21]
-[ext_resource path="res://Assets/Adventurer-1.5/Individual Sprites/adventurer-attack1-04.png" type="Texture" id=22]
-[ext_resource path="res://Assets/Adventurer-1.5/Individual Sprites/adventurer-attack1-01.png" type="Texture" id=23]
-[ext_resource path="res://Assets/Adventurer-1.5/Individual Sprites/adventurer-attack1-00.png" type="Texture" id=24]
-[ext_resource path="res://Assets/all sprite sample/all sprite sample/legendary dragon.png" type="Texture" id=25]
+[ext_resource path="res://Assets/characters/player/adventurer-jump-01.png" type="Texture" id=16]
+[ext_resource path="res://Assets/characters/player/adventurer-run-02.png" type="Texture" id=17]
+[ext_resource path="res://Assets/characters/player/adventurer-idle-2-03.png" type="Texture" id=18]
+[ext_resource path="res://Assets/characters/player/adventurer-jump-02.png" type="Texture" id=19]
+[ext_resource path="res://Assets/characters/player/adventurer-attack1-02.png" type="Texture" id=20]
+[ext_resource path="res://Assets/characters/player/adventurer-attack1-03.png" type="Texture" id=21]
+[ext_resource path="res://Assets/characters/player/adventurer-attack1-04.png" type="Texture" id=22]
+[ext_resource path="res://Assets/characters/player/adventurer-attack1-01.png" type="Texture" id=23]
+[ext_resource path="res://Assets/characters/player/adventurer-attack1-00.png" type="Texture" id=24]
 
 [sub_resource type="Animation" id=53]
 resource_name = "idle"
@@ -65,23 +64,6 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="AtlasTexture" id=57]
-atlas = ExtResource( 25 )
-region = Rect2( 0, 0, 240, 224 )
-
-[sub_resource type="SpriteFrames" id=58]
-animations = [ {
-"frames": [  ],
-"loop": true,
-"name": "default",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 57 ) ],
-"loop": true,
-"name": "idle",
-"speed": 5.0
-} ]
-
 [node name="Player" instance=ExtResource( 13 )]
 script = ExtResource( 15 )
 
@@ -111,11 +93,5 @@ margin_bottom = -48.0
 
 [node name="AttackCooldown" type="Timer" parent="." index="4"]
 one_shot = true
-
-[node name="AnimatedSprite2" type="AnimatedSprite" parent="." index="5"]
-visible = false
-position = Vector2( -8, -40 )
-frames = SubResource( 58 )
-animation = "idle"
 
 [connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
