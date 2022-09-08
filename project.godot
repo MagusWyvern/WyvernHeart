@@ -17,6 +17,10 @@ boot_splash/image="res://Assets/wyvernheart.png"
 boot_splash/bg_color=Color( 0.101961, 0.0980392, 0.0980392, 1 )
 config/icon="res://Assets/wyvernheart.png"
 
+[display]
+
+window/size/resizable=false
+
 [importer_defaults]
 
 texture={
