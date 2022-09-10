@@ -1,6 +1,6 @@
 extends Node2D
 
-var music = load("res://Scenes/OST_Celestial_Caves.tscn").instance()
+var music = load("res://Scenes/OST/OST_Celestial_Caves.tscn").instance()
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

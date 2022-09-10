@@ -38,32 +38,43 @@ func _physics_process(_delta):
 		velocity.x += ACCELERATION
 		$AnimatedSprite.flip_v = false
 		$AnimatedSprite.flip_h = velocity.x < 0
+		
 	elif Input.is_action_pressed("left"):
 		velocity.x -= ACCELERATION
 		$AnimatedSprite.flip_v = false
+		if velocity.x < 0 == true:
+			$Attack_box/collision_attack.position.x *= -1 
 		$AnimatedSprite.flip_h = velocity.x < 0
+		
 	elif Input.is_action_pressed("attack"):
+		
 		if $AttackCooldown.is_stopped():
+			
 			print("Attacking!")
 			is_attacking = true
 			$AttackCooldown.start()
+			
 	else: 
 		velocity.x = lerp(motion.x, 0, 0.2)
 		
 		
 	if velocity.y > 20:
-		$AnimatedSprite.play("fall")
+		$AnimationPlayer.play("fall")
+		
 	elif velocity.y < 0:
-		$AnimatedSprite.play("jump")
+		$AnimationPlayer.play("jump")
 		should_change_animation = false
+		
 	elif velocity.x > 0 || velocity.x < 0:
 		if should_change_animation:
 			$AnimatedSprite.animation = "walk"
 			$AnimatedSprite.play()
+			
 	elif is_attacking == true:
-		$AnimatedSprite.play("attack")
+		$AnimationPlayer.play("attack")
+		
 	else:
-		$AnimatedSprite.play("idle")
+		$AnimationPlayer.play("idle")
 		should_change_animation = true
 
 	

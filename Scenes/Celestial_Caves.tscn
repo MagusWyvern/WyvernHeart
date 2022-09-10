@@ -4825,7 +4825,7 @@ position = Vector2( 1532, 158 )
 position = Vector2( 1240, 93 )
 
 [node name="Enemy_Knight" parent="." instance=ExtResource( 12 )]
-position = Vector2( 757, 50 )
+position = Vector2( 227, 12 )
 
 [node name="Dark_Background" type="TileMap" parent="."]
 z_index = -3

@@ -2610,7 +2610,6 @@ shape = SubResource( 54 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Player"]
 frames = SubResource( 55 )
 animation = "idle"
-frame = 2
 playing = true
 
 [node name="Wyvernheart-bg" type="Sprite" parent="."]

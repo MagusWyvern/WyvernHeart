@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=2]
+[gd_scene load_steps=44 format=2]
 
 [ext_resource path="res://Scenes/Entities/EntityBase.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Entities/Health Bars/Enemy_HealthBar.tscn" type="PackedScene" id=2]
@@ -8,10 +8,13 @@
 [ext_resource path="res://Assets/characters/enemy/Colour2/Outline/120x80_PNGSheets/_Jump.png" type="Texture" id=6]
 [ext_resource path="res://Assets/characters/enemy/Colour2/Outline/120x80_PNGSheets/_AttackNoMovement.png" type="Texture" id=7]
 [ext_resource path="res://Assets/characters/enemy/Colour2/Outline/120x80_PNGSheets/_Run.png" type="Texture" id=8]
+[ext_resource path="res://Scenes/Entities/Health Bars/Enemy_HealthBar.gd" type="Script" id=9]
 
+[sub_resource type="RectangleShape2D" id=34]
+extents = Vector2( 10.5, 19 )
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 11, 18.75 )
+extents = Vector2( 10.5, 19 )
 
 [sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 5 )
@@ -53,6 +56,18 @@ region = Rect2( 960, 40, 120, 40 )
 atlas = ExtResource( 5 )
 region = Rect2( 1080, 40, 120, 40 )
 
+[sub_resource type="AtlasTexture" id=15]
+atlas = ExtResource( 4 )
+region = Rect2( 0, 40, 120, 40 )
+
+[sub_resource type="AtlasTexture" id=16]
+atlas = ExtResource( 4 )
+region = Rect2( 120, 40, 120, 40 )
+
+[sub_resource type="AtlasTexture" id=17]
+atlas = ExtResource( 4 )
+region = Rect2( 240, 40, 120, 40 )
+
 [sub_resource type="AtlasTexture" id=12]
 atlas = ExtResource( 6 )
 region = Rect2( 0, 40, 120, 40 )
@@ -65,17 +80,21 @@ region = Rect2( 120, 40, 120, 40 )
 atlas = ExtResource( 6 )
 region = Rect2( 240, 40, 120, 40 )
 
-[sub_resource type="AtlasTexture" id=15]
-atlas = ExtResource( 4 )
+[sub_resource type="AtlasTexture" id=28]
+atlas = ExtResource( 7 )
 region = Rect2( 0, 40, 120, 40 )
 
-[sub_resource type="AtlasTexture" id=16]
-atlas = ExtResource( 4 )
+[sub_resource type="AtlasTexture" id=29]
+atlas = ExtResource( 7 )
 region = Rect2( 120, 40, 120, 40 )
 
-[sub_resource type="AtlasTexture" id=17]
-atlas = ExtResource( 4 )
+[sub_resource type="AtlasTexture" id=30]
+atlas = ExtResource( 7 )
 region = Rect2( 240, 40, 120, 40 )
+
+[sub_resource type="AtlasTexture" id=31]
+atlas = ExtResource( 7 )
+region = Rect2( 360, 40, 120, 40 )
 
 [sub_resource type="AtlasTexture" id=18]
 atlas = ExtResource( 8 )
@@ -117,22 +136,6 @@ region = Rect2( 960, 40, 120, 40 )
 atlas = ExtResource( 8 )
 region = Rect2( 1080, 40, 120, 40 )
 
-[sub_resource type="AtlasTexture" id=28]
-atlas = ExtResource( 7 )
-region = Rect2( 0, 40, 120, 40 )
-
-[sub_resource type="AtlasTexture" id=29]
-atlas = ExtResource( 7 )
-region = Rect2( 120, 40, 120, 40 )
-
-[sub_resource type="AtlasTexture" id=30]
-atlas = ExtResource( 7 )
-region = Rect2( 240, 40, 120, 40 )
-
-[sub_resource type="AtlasTexture" id=31]
-atlas = ExtResource( 7 )
-region = Rect2( 360, 40, 120, 40 )
-
 [sub_resource type="SpriteFrames" id=32]
 animations = [ {
 "frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ) ],
@@ -140,24 +143,24 @@ animations = [ {
 "name": "idle",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 12 ), SubResource( 13 ), SubResource( 14 ) ],
-"loop": true,
-"name": "jump",
-"speed": 5.0
-}, {
 "frames": [ SubResource( 15 ), SubResource( 16 ), SubResource( 17 ) ],
 "loop": true,
 "name": "fall",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ) ],
+"frames": [ SubResource( 12 ), SubResource( 13 ), SubResource( 14 ) ],
 "loop": true,
-"name": "walk",
+"name": "jump",
 "speed": 5.0
 }, {
 "frames": [ SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ) ],
 "loop": true,
 "name": "attack",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ) ],
+"loop": true,
+"name": "walk",
 "speed": 5.0
 } ]
 
@@ -166,21 +169,29 @@ bg_color = Color( 1, 0, 0, 1 )
 
 [node name="Enemy_Knight" instance=ExtResource( 1 )]
 script = ExtResource( 3 )
+hp = 100
 
-[node name="CollisionShape2D" parent="." index="1"]
-position = Vector2( -5, 0.75 )
+[node name="hurtbox_area" type="Area2D" parent="." index="0"]
+
+[node name="hurtbox" type="CollisionShape2D" parent="hurtbox_area" index="0"]
+position = Vector2( -5.5, 1 )
+shape = SubResource( 34 )
+
+[node name="CollisionShape2D" parent="." index="2"]
+position = Vector2( -5.5, 1 )
 shape = SubResource( 1 )
 
-[node name="AnimatedSprite" parent="." index="2"]
+[node name="AnimatedSprite" parent="." index="3"]
 frames = SubResource( 32 )
-animation = "jump"
+animation = "idle"
 speed_scale = 1.5
 
-[node name="Control" parent="." index="3" instance=ExtResource( 2 )]
+[node name="Control" parent="." index="4" instance=ExtResource( 2 )]
 margin_left = -98.0
 margin_top = -52.0
 margin_right = -98.0
 margin_bottom = -52.0
+script = ExtResource( 9 )
 
 [node name="HealthBar" parent="Control" index="0"]
 margin_top = 31.0
@@ -189,5 +200,7 @@ custom_styles/fg = SubResource( 33 )
 
 [node name="ManaBar" parent="Control" index="1"]
 visible = false
+
+[connection signal="area_shape_entered" from="hurtbox_area" to="." method="_on_hurtbox_area_area_shape_entered"]
 
 [editable path="Control"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://Assets/characters/player/adventurer-idle-2-01.png" type="Texture" id=1]
 [ext_resource path="res://Assets/characters/player/adventurer-jump-00.png" type="Texture" id=2]
@@ -25,19 +25,174 @@
 [ext_resource path="res://Assets/characters/player/adventurer-attack1-01.png" type="Texture" id=23]
 [ext_resource path="res://Assets/characters/player/adventurer-attack1-00.png" type="Texture" id=24]
 
+[sub_resource type="RectangleShape2D" id=61]
+extents = Vector2( 4.5, 11.25 )
+
+[sub_resource type="Animation" id=57]
+resource_name = "attack"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.9 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ "attack", "idle" ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../Attack_box/collision_attack:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.398261, 0.602833 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ true, false, true ]
+}
+
+[sub_resource type="Animation" id=58]
+resource_name = "fall"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "fall" ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 0, 1 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../CollisionShape2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"update": 0,
+"values": [  ]
+}
+
 [sub_resource type="Animation" id=53]
 resource_name = "idle"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "idle" ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ 1, 2, 3 ]
+}
 
-[sub_resource type="RectangleShape2D" id=56]
-extents = Vector2( 10, 12.75 )
+[sub_resource type="Animation" id=59]
+resource_name = "jump"
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.00217629 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "jump" ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.00217629, 0.25, 0.5, 0.75 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3 ]
+}
+
+[sub_resource type="Animation" id=60]
+resource_name = "walk"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "walk" ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.16, 0.326225, 0.495757, 0.654407, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 5 ]
+}
 
 [sub_resource type="SpriteFrames" id=55]
 animations = [ {
-"frames": [  ],
-"loop": true,
-"name": "default",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 11 ), ExtResource( 1 ), ExtResource( 7 ), ExtResource( 18 ) ],
 "loop": true,
 "name": "idle",
@@ -64,34 +219,52 @@ animations = [ {
 "speed": 5.0
 } ]
 
+[sub_resource type="RectangleShape2D" id=56]
+extents = Vector2( 7.5, 13.25 )
+
 [node name="Player" instance=ExtResource( 13 )]
 script = ExtResource( 15 )
 
-[node name="AnimationPlayer" parent="." index="0"]
-anims/idle = SubResource( 53 )
+[node name="Attack_box" type="Area2D" parent="." index="0"]
 
-[node name="CollisionShape2D" parent="." index="1"]
-position = Vector2( -2, 4.75 )
-shape = SubResource( 56 )
+[node name="collision_attack" type="CollisionShape2D" parent="Attack_box" index="0"]
+position = Vector2( 19, -2 )
+shape = SubResource( 61 )
+
+[node name="AnimationPlayer" parent="." index="1"]
+root_node = NodePath("../AnimatedSprite")
+autoplay = "idle"
+anims/attack = SubResource( 57 )
+anims/fall = SubResource( 58 )
+anims/idle = SubResource( 53 )
+anims/jump = SubResource( 59 )
+anims/walk = SubResource( 60 )
 
 [node name="AnimatedSprite" parent="." index="2"]
 frames = SubResource( 55 )
-animation = "idle"
+animation = "attack"
+frame = 2
 speed_scale = 1.5
 
-[node name="Camera2D" type="Camera2D" parent="." index="3"]
+[node name="CollisionShape2D" parent="." index="3"]
+position = Vector2( -0.5, 4.25 )
+shape = SubResource( 56 )
+
+[node name="Camera2D" type="Camera2D" parent="." index="4"]
 offset = Vector2( 0, -40 )
 current = true
 zoom = Vector2( 0.4, 0.4 )
 smoothing_enabled = true
 
 [node name="Control" parent="Camera2D" index="0" instance=ExtResource( 14 )]
-margin_left = -96.0
+margin_left = -99.0
 margin_top = -48.0
-margin_right = -96.0
+margin_right = -99.0
 margin_bottom = -48.0
 
-[node name="AttackCooldown" type="Timer" parent="." index="4"]
+[node name="AttackCooldown" type="Timer" parent="." index="5"]
+wait_time = 1.2
 one_shot = true
 
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
 [connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
