@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/wyvernheart.png-518a395619a7b9e49fd7bbac6a1e3cfa.stex"
+path="res://.import/wyvernheart.png-bd8ce9e6b5dd589e57252cd0865dd785.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/wyvernheart.png"
-dest_files=[ "res://.import/wyvernheart.png-518a395619a7b9e49fd7bbac6a1e3cfa.stex" ]
+source_file="res://Assets/wyvernheart.png"
+dest_files=[ "res://.import/wyvernheart.png-bd8ce9e6b5dd589e57252cd0865dd785.stex" ]
 
 [params]
 
