@@ -1,4 +1,4 @@
-[gd_scene load_steps=62 format=2]
+[gd_scene load_steps=63 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Player/Player.png" type="Texture" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Music and Sounds/Swipe.wav" type="AudioStream" id=7]
 [ext_resource path="res://Music and Sounds/Evade.wav" type="AudioStream" id=8]
 [ext_resource path="res://WhiteColor.gdshader" type="Shader" id=9]
+[ext_resource path="res://Effects/light.png" type="Texture" id=10]
 
 [sub_resource type="ShaderMaterial" id=56]
 shader = ExtResource( 9 )
@@ -899,6 +900,12 @@ shape = SubResource( 54 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 8 )
+
+[node name="Light2D" type="Light2D" parent="."]
+texture = ExtResource( 10 )
+texture_scale = 0.8
+energy = 0.6
+shadow_enabled = true
 
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
 [connection signal="invincibility_ended" from="Hurtbox" to="." method="_on_Hurtbox_invincibility_ended"]
