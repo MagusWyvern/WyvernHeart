@@ -34,6 +34,7 @@ animations = [ {
 position = Vector2( 0, 4 )
 rotation = 1.5708
 shape = SubResource( 2 )
+disabled = true
 
 [node name="ShadowSprite" type="Sprite" parent="."]
 position = Vector2( 0, 4 )
@@ -42,5 +43,5 @@ texture = ExtResource( 15 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
 animation = "idle"
-frame = 3
+frame = 12
 playing = true

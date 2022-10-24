@@ -12,7 +12,7 @@ config_version=4
 
 config/name="WyernHeart"
 config/description="The endearing adventure of a blue fox!"
-run/main_scene="res://World.tscn"
+run/main_scene="res://MainMenu.tscn"
 boot_splash/image="res://wyvernheart_watermark.png"
 boot_splash/fullsize=false
 config/icon="res://wyvernheart-new.png"

@@ -1,4 +1,4 @@
-[gd_scene load_steps=109 format=2]
+[gd_scene load_steps=114 format=2]
 
 [ext_resource path="res://Effects/light.png" type="Texture" id=1]
 [ext_resource path="res://Enemies/Bat.tscn" type="PackedScene" id=2]
@@ -11,6 +11,8 @@
 [ext_resource path="res://World/GrassBackground.png" type="Texture" id=9]
 [ext_resource path="res://wyvernheart-white.png" type="Texture" id=10]
 [ext_resource path="res://wyvernheartname.png" type="Texture" id=11]
+[ext_resource path="res://UI/Ancient Medium.ttf" type="DynamicFontData" id=12]
+[ext_resource path="res://MainMenu.gd" type="Script" id=13]
 
 [sub_resource type="TileSet" id=1]
 0/name = "DirtTileset.png 0"
@@ -636,7 +638,38 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 } ]
 0/z_index = 0
 
+[sub_resource type="DynamicFont" id=98]
+size = 11
+font_data = ExtResource( 12 )
+
+[sub_resource type="StyleBoxFlat" id=100]
+bg_color = Color( 0.0235294, 0.0235294, 0.117647, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0.776471, 0.764706, 0.764706, 1 )
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="Theme" id=99]
+Button/colors/font_color = Color( 0.88, 0.88, 0.88, 1 )
+Button/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
+Button/colors/font_color_focus = Color( 0.94, 0.94, 0.94, 1 )
+Button/colors/font_color_hover = Color( 0.94, 0.94, 0.94, 1 )
+Button/colors/font_color_pressed = Color( 1, 1, 1, 1 )
+Button/constants/hseparation = 2
+Button/fonts/font = SubResource( 98 )
+Button/styles/disabled = null
+Button/styles/focus = null
+Button/styles/hover = null
+Button/styles/normal = SubResource( 100 )
+Button/styles/pressed = null
+
 [node name="Main" type="Node2D"]
+script = ExtResource( 13 )
 
 [node name="World" type="Node2D" parent="."]
 position = Vector2( 112, 72 )
@@ -1056,3 +1089,32 @@ texture = ExtResource( 10 )
 [node name="Wyvernheartname" type="Sprite" parent="Wyvernheart-white"]
 position = Vector2( 0, -2 )
 texture = ExtResource( 11 )
+
+[node name="HSeparator" type="HSeparator" parent="."]
+margin_right = 40.0
+margin_bottom = 4.0
+
+[node name="Start_Button" type="Button" parent="HSeparator"]
+margin_left = 91.0
+margin_top = 85.0
+margin_right = 198.0
+margin_bottom = 100.0
+rect_clip_content = true
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = SubResource( 99 )
+text = "Start"
+
+[node name="Quit_Button" type="Button" parent="HSeparator"]
+margin_left = 91.0
+margin_top = 102.0
+margin_right = 198.0
+margin_bottom = 117.0
+rect_clip_content = true
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = SubResource( 99 )
+text = "Quit"
+
+[connection signal="pressed" from="HSeparator/Start_Button" to="." method="_on_Start_Button_pressed"]
+[connection signal="pressed" from="HSeparator/Quit_Button" to="." method="_on_Quit_Button_pressed"]
