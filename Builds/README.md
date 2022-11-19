@@ -1,1 +1,0 @@
-Due to file size limitations, all build files are hosted on [Google Drive](https://drive.google.com/drive/folders/1lPtHRQJcv7aWpYOnLAJ29ZhAynU51fMO?usp=sharing).

@@ -17,7 +17,7 @@ func _process(delta):
 
 
 func _on_Start_Button_pressed():
-	get_tree().change_scene("res://World.tscn")
+	get_tree().change_scene("res://World-Improved.tscn")
 
 func _on_Quit_Button_pressed():
 	get_tree().quit()
