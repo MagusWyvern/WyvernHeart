@@ -211,14 +211,14 @@ tracks/0/keys = {
 radius = 3.0
 
 [sub_resource type="CapsuleShape2D" id=36]
-radius = 16.0
+radius = 24.0
 height = 6.0
 
 [sub_resource type="CircleShape2D" id=37]
 radius = 56.0089
 
 [sub_resource type="CircleShape2D" id=38]
-radius = 6.0
+radius = 16.0312
 
 [sub_resource type="CircleShape2D" id=39]
 radius = 5.0
@@ -230,7 +230,7 @@ script = ExtResource( 14 )
 material = SubResource( 1 )
 frames = SubResource( 31 )
 animation = "idle"
-frame = 1
+frame = 2
 playing = true
 offset = Vector2( 0, -12 )
 flip_h = true

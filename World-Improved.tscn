@@ -1792,7 +1792,7 @@ position = Vector2( -567, 172 )
 position = Vector2( 648, -341 )
 
 [node name="Evil_Wizard2" parent="YSort/Evil_Wizard" instance=ExtResource( 18 )]
-position = Vector2( -216, 377 )
+position = Vector2( 616, -404 )
 
 [node name="Camera2D" parent="." instance=ExtResource( 12 )]
 position = Vector2( -615, 539 )
